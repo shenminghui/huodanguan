@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huodan.mapper.DeliveryOrderMapper">
+    <select id="selectDeliveryOrderPage" resultType="com.huodan.entity.DeliveryOrder">
+        SELECT * FROM delivery_order
+        <where>
+            <if test="query.startDate != null and query.startDate != ''">
+                AND DATE_FORMAT(STR_TO_DATE(order_date, '%Y/%m/%d'), '%Y/%m') >= DATE_FORMAT(STR_TO_DATE(#{query.startDate}, '%Y/%m'), '%Y/%m')
+            </if>
+            <if test="query.endDate != null and query.endDate != ''">
+                AND DATE_FORMAT(STR_TO_DATE(order_date, '%Y/%m/%d'), '%Y/%m') &lt;= DATE_FORMAT(STR_TO_DATE(CONCAT(#{query.endDate}, '/31'), '%Y/%m/%d'), '%Y/%m')
+            </if>
+            <if test="query.projectName != null and query.projectName != ''">
+                AND project_name LIKE CONCAT('%', #{query.projectName}, '%')
+            </if>
+            <if test="query.receivingUnit != null and query.receivingUnit != ''">
+                AND receiving_unit LIKE CONCAT('%', #{query.receivingUnit}, '%')
+            </if>
+            <if test="query.vehicleNumber != null and query.vehicleNumber != ''">
+                AND vehicle_number = #{query.vehicleNumber}
+            </if>
+            <if test="query.supplyReconciliationStatus != null and query.supplyReconciliationStatus != ''">
+                AND supply_reconciliation_status = #{query.supplyReconciliationStatus}
+            </if>
+            <if test="query.supplyPaymentStatus != null and query.supplyPaymentStatus != ''">
+                AND supply_payment_status = #{query.supplyPaymentStatus}
+            </if>
+            <if test="query.mixingStation != null and query.mixingStation != ''">
+                AND mixing_station LIKE CONCAT('%', #{query.mixingStation}, '%')
+            </if>
+            <if test="query.factoryReconciliationStatus != null and query.factoryReconciliationStatus != ''">
+                AND factory_reconciliation_status = #{query.factoryReconciliationStatus}
+            </if>
+            <if test="query.factoryPaymentStatus != null and query.factoryPaymentStatus != ''">
+                AND factory_payment_status = #{query.factoryPaymentStatus}
+            </if>
+            <if test="query.driverName != null and query.driverName != ''">
+                AND driver_name LIKE CONCAT('%', #{query.driverName}, '%')
+            </if>
+        </where>
+        ORDER BY STR_TO_DATE(order_date, '%Y/%m/%d') DESC, id DESC
+    </select>
+
+    <select id="selectTotal" resultType="long">
+        SELECT COUNT(*) FROM delivery_order
+        <where>
+            <if test="query.startDate != null and query.startDate != ''">
+                AND DATE_FORMAT(STR_TO_DATE(order_date, '%Y/%m/%d'), '%Y/%m') >= DATE_FORMAT(STR_TO_DATE(#{query.startDate}, '%Y/%m'), '%Y/%m')
+            </if>
+            <if test="query.endDate != null and query.endDate != ''">
+                AND DATE_FORMAT(STR_TO_DATE(order_date, '%Y/%m/%d'), '%Y/%m') &lt;= DATE_FORMAT(STR_TO_DATE(CONCAT(#{query.endDate}, '/31'), '%Y/%m/%d'), '%Y/%m')
+            </if>
+            <if test="query.projectName != null and query.projectName != ''">
+                AND project_name LIKE CONCAT('%', #{query.projectName}, '%')
+            </if>
+            <if test="query.receivingUnit != null and query.receivingUnit != ''">
+                AND receiving_unit LIKE CONCAT('%', #{query.receivingUnit}, '%')
+            </if>
+            <if test="query.vehicleNumber != null and query.vehicleNumber != ''">
+                AND vehicle_number = #{query.vehicleNumber}
+            </if>
+            <if test="query.supplyReconciliationStatus != null and query.supplyReconciliationStatus != ''">
+                AND supply_reconciliation_status = #{query.supplyReconciliationStatus}
+            </if>
+            <if test="query.supplyPaymentStatus != null and query.supplyPaymentStatus != ''">
+                AND supply_payment_status = #{query.supplyPaymentStatus}
+            </if>
+            <if test="query.mixingStation != null and query.mixingStation != ''">
+                AND mixing_station LIKE CONCAT('%', #{query.mixingStation}, '%')
+            </if>
+            <if test="query.factoryReconciliationStatus != null and query.factoryReconciliationStatus != ''">
+                AND factory_reconciliation_status = #{query.factoryReconciliationStatus}
+            </if>
+            <if test="query.factoryPaymentStatus != null and query.factoryPaymentStatus != ''">
+                AND factory_payment_status = #{query.factoryPaymentStatus}
+            </if>
+            <if test="query.driverName != null and query.driverName != ''">
+                AND driver_name LIKE CONCAT('%', #{query.driverName}, '%')
+            </if>
+        </where>
+    </select>
+</mapper> 

@@ -1,0 +1,231 @@
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 4CD8-8A02
+D:.
+│  huodanguanlihoutai.iml
+│  pom.xml
+│  structure.txt
+│  
+├─.idea
+│  │  .gitignore
+│  │  compiler.xml
+│  │  encodings.xml
+│  │  jarRepositories.xml
+│  │  misc.xml
+│  │  modules.xml
+│  │  workspace.xml
+│  │  
+│  └─libraries
+│          Maven__cglib_cglib_3_1.xml
+│          Maven__ch_qos_logback_logback_classic_1_2_3.xml
+│          Maven__ch_qos_logback_logback_core_1_2_3.xml
+│          Maven__commons_codec_commons_codec_1_14.xml
+│          Maven__commons_fileupload_commons_fileupload_1_4.xml
+│          Maven__commons_io_commons_io_2_2.xml
+│          Maven__com_alibaba_easyexcel_2_2_6.xml
+│          Maven__com_alibaba_fastjson_1_2_76.xml
+│          Maven__com_baomidou_mybatis_plus_3_4_2.xml
+│          Maven__com_baomidou_mybatis_plus_annotation_3_4_2.xml
+│          Maven__com_baomidou_mybatis_plus_boot_starter_3_4_2.xml
+│          Maven__com_baomidou_mybatis_plus_core_3_4_2.xml
+│          Maven__com_baomidou_mybatis_plus_extension_3_4_2.xml
+│          Maven__com_fasterxml_classmate_1_5_1.xml
+│          Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml
+│          Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml
+│          Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml
+│          Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml
+│          Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml
+│          Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml
+│          Maven__com_github_jsqlparser_jsqlparser_4_0.xml
+│          Maven__com_github_virtuald_curvesapi_1_04.xml
+│          Maven__com_google_guava_guava_20_0.xml
+│          Maven__com_sun_activation_jakarta_activation_1_2_2.xml
+│          Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml
+│          Maven__com_zaxxer_HikariCP_3_4_5.xml
+│          Maven__io_springfox_springfox_core_2_9_2.xml
+│          Maven__io_springfox_springfox_schema_2_9_2.xml
+│          Maven__io_springfox_springfox_spi_2_9_2.xml
+│          Maven__io_springfox_springfox_spring_web_2_9_2.xml
+│          Maven__io_springfox_springfox_swagger2_2_9_2.xml
+│          Maven__io_springfox_springfox_swagger_common_2_9_2.xml
+│          Maven__io_springfox_springfox_swagger_ui_2_9_2.xml
+│          Maven__io_swagger_swagger_annotations_1_5_20.xml
+│          Maven__io_swagger_swagger_models_1_5_20.xml
+│          Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml
+│          Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml
+│          Maven__mysql_mysql_connector_java_8_0_23.xml
+│          Maven__net_bytebuddy_byte_buddy_1_10_22.xml
+│          Maven__org_apache_commons_commons_collections4_4_1.xml
+│          Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml
+│          Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml
+│          Maven__org_apache_poi_poi_3_17.xml
+│          Maven__org_apache_poi_poi_ooxml_3_17.xml
+│          Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml
+│          Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_46.xml
+│          Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_46.xml
+│          Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml
+│          Maven__org_ehcache_ehcache_3_8_1.xml
+│          Maven__org_glassfish_jakarta_el_3_0_3.xml
+│          Maven__org_glassfish_jaxb_jaxb_runtime_2_3_4.xml
+│          Maven__org_glassfish_jaxb_txw2_2_3_4.xml
+│          Maven__org_mapstruct_mapstruct_1_2_0_Final.xml
+│          Maven__org_mybatis_mybatis_3_5_6.xml
+│          Maven__org_mybatis_mybatis_spring_2_0_5.xml
+│          Maven__org_ow2_asm_asm_4_2.xml
+│          Maven__org_projectlombok_lombok_1_18_20.xml
+│          Maven__org_slf4j_jul_to_slf4j_1_7_30.xml
+│          Maven__org_slf4j_slf4j_api_1_7_30.xml
+│          Maven__org_springframework_boot_spring_boot_2_3_12_RELEASE.xml
+│          Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_12_RELEASE.xml
+│          Maven__org_springframework_boot_spring_boot_starter_2_3_12_RELEASE.xml
+│          Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_12_RELEASE.xml
+│          Maven__org_springframework_boot_spring_boot_starter_json_2_3_12_RELEASE.xml
+│          Maven__org_springframework_boot_spring_boot_starter_logging_2_3_12_RELEASE.xml
+│          Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_12_RELEASE.xml
+│          Maven__org_springframework_boot_spring_boot_starter_web_2_3_12_RELEASE.xml
+│          Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml
+│          Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml
+│          Maven__org_springframework_spring_aop_5_2_15_RELEASE.xml
+│          Maven__org_springframework_spring_beans_5_2_15_RELEASE.xml
+│          Maven__org_springframework_spring_context_5_2_15_RELEASE.xml
+│          Maven__org_springframework_spring_core_5_2_15_RELEASE.xml
+│          Maven__org_springframework_spring_expression_5_2_15_RELEASE.xml
+│          Maven__org_springframework_spring_jcl_5_2_15_RELEASE.xml
+│          Maven__org_springframework_spring_jdbc_5_2_15_RELEASE.xml
+│          Maven__org_springframework_spring_tx_5_2_15_RELEASE.xml
+│          Maven__org_springframework_spring_webmvc_5_2_15_RELEASE.xml
+│          Maven__org_springframework_spring_web_5_2_15_RELEASE.xml
+│          Maven__org_yaml_snakeyaml_1_26.xml
+│          Maven__stax_stax_api_1_0_1.xml
+│          
+├─src
+│  └─main
+│      ├─java
+│      │  └─com
+│      │      └─huodan
+│      │          │  HuodanApplication.java
+│      │          │  
+│      │          ├─common
+│      │          │      Result.java
+│      │          │      
+│      │          ├─config
+│      │          │      CorsConfig.java
+│      │          │      DatabaseInitializer.java
+│      │          │      FileUploadConfig.java
+│      │          │      MybatisPlusConfig.java
+│      │          │      WebMvcConfig.java
+│      │          │      
+│      │          ├─controller
+│      │          │      DeliveryOrderController.java
+│      │          │      LoginController.java
+│      │          │      MaterialDetailController.java
+│      │          │      
+│      │          ├─entity
+│      │          │      DeliveryOrder.java
+│      │          │      MaterialDetail.java
+│      │          │      SysUser.java
+│      │          │      
+│      │          ├─mapper
+│      │          │      DeliveryOrderMapper.java
+│      │          │      MaterialDetailMapper.java
+│      │          │      SysUserMapper.java
+│      │          │      
+│      │          ├─model
+│      │          │      DeliveryOrderQuery.java
+│      │          │      LoginRequest.java
+│      │          │      LoginResponse.java
+│      │          │      MaterialDetailQuery.java
+│      │          │      
+│      │          └─service
+│      │                  DeliveryOrderService.java
+│      │                  MaterialDetailService.java
+│      │                  SysUserService.java
+│      │                  
+│      └─resources
+│          │  application.yml
+│          │  
+│          ├─db
+│          │      schema.sql
+│          │      
+│          └─mapper
+│                  DeliveryOrderMapper.xml
+│                  MaterialDetailMapper.xml
+│                  
+├─target
+│  │  huodanguanlihoutai-1.0-SNAPSHOT.jar
+│  │  huodanguanlihoutai-1.0-SNAPSHOT.jar.original
+│  │  
+│  ├─classes
+│  │  │  application.yml
+│  │  │  
+│  │  ├─com
+│  │  │  └─huodan
+│  │  │      │  HuodanApplication.class
+│  │  │      │  
+│  │  │      ├─common
+│  │  │      │      Result.class
+│  │  │      │      
+│  │  │      ├─config
+│  │  │      │      CorsConfig.class
+│  │  │      │      DatabaseInitializer.class
+│  │  │      │      FileUploadConfig.class
+│  │  │      │      MybatisPlusConfig.class
+│  │  │      │      WebMvcConfig.class
+│  │  │      │      
+│  │  │      ├─controller
+│  │  │      │      DeliveryOrderController.class
+│  │  │      │      LoginController.class
+│  │  │      │      MaterialDetailController.class
+│  │  │      │      
+│  │  │      ├─entity
+│  │  │      │      DeliveryOrder.class
+│  │  │      │      MaterialDetail.class
+│  │  │      │      SysUser.class
+│  │  │      │      
+│  │  │      ├─mapper
+│  │  │      │      DeliveryOrderMapper.class
+│  │  │      │      MaterialDetailMapper.class
+│  │  │      │      SysUserMapper.class
+│  │  │      │      
+│  │  │      ├─model
+│  │  │      │      DeliveryOrderQuery.class
+│  │  │      │      LoginRequest.class
+│  │  │      │      LoginResponse.class
+│  │  │      │      MaterialDetailQuery.class
+│  │  │      │      
+│  │  │      └─service
+│  │  │              DeliveryOrderService.class
+│  │  │              MaterialDetailService.class
+│  │  │              SysUserService.class
+│  │  │              
+│  │  ├─db
+│  │  │      schema.sql
+│  │  │      
+│  │  └─mapper
+│  │          DeliveryOrderMapper.xml
+│  │          MaterialDetailMapper.xml
+│  │          
+│  ├─generated-sources
+│  │  └─annotations
+│  ├─generated-test-sources
+│  │  └─test-annotations
+│  ├─maven-archiver
+│  │      pom.properties
+│  │      
+│  ├─maven-status
+│  │  └─maven-compiler-plugin
+│  │      └─compile
+│  │          └─default-compile
+│  │                  createdFiles.lst
+│  │                  inputFiles.lst
+│  │                  
+│  └─test-classes
+└─uploads
+        5548d9a3-1e88-40fc-8c12-10df5dc1c654.png
+        5f7c6346-3109-4893-8f5c-abfb52d456d7.jpg
+        6547402b-15fb-416a-95fc-a4dac44cb020.png
+        68e2ca30-d3f8-4af7-a310-10a3f0841e15.png
+        837fd8d2-942a-4a33-8d39-5d5442314675.png
+        a8ae603c-a020-4749-b62f-034976bf1227.jpg
+        b2fd180f-dc84-4d98-9aa9-33c558025235.png
+        bfe3526b-cb91-4386-b75d-fecabe24d3ac.png
+        

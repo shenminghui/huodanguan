@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huodan.mapper.MaterialDetailMapper">
+    <select id="selectMaterialDetailPage" resultType="com.huodan.entity.MaterialDetail">
+        SELECT * FROM material_detail
+        <where>
+            <if test="query.startDate != null and query.startDate != ''">
+                AND DATE_FORMAT(STR_TO_DATE(detail_date, '%Y/%m/%d'), '%Y/%m') >= DATE_FORMAT(STR_TO_DATE(#{query.startDate}, '%Y/%m'), '%Y/%m')
+            </if>
+            <if test="query.endDate != null and query.endDate != ''">
+                AND DATE_FORMAT(STR_TO_DATE(detail_date, '%Y/%m/%d'), '%Y/%m') &lt;= DATE_FORMAT(STR_TO_DATE(#{query.endDate}, '%Y/%m'), '%Y/%m')
+            </if>
+            <if test="query.receivingLocation != null and query.receivingLocation != ''">
+                AND receiving_location LIKE CONCAT('%', #{query.receivingLocation}, '%')
+            </if>
+            <if test="query.materialType != null and query.materialType != ''">
+                AND material_type LIKE CONCAT('%', #{query.materialType}, '%')
+            </if>
+            <if test="query.vehicleNumber != null and query.vehicleNumber != ''">
+                AND vehicle_number = #{query.vehicleNumber}
+            </if>
+            <if test="query.supplyReconciliationStatus != null and query.supplyReconciliationStatus != ''">
+                AND supply_reconciliation_status = #{query.supplyReconciliationStatus}
+            </if>
+            <if test="query.supplyPaymentStatus != null and query.supplyPaymentStatus != ''">
+                AND supply_payment_status = #{query.supplyPaymentStatus}
+            </if>
+            <if test="query.factoryReconciliationStatus != null and query.factoryReconciliationStatus != ''">
+                AND factory_reconciliation_status = #{query.factoryReconciliationStatus}
+            </if>
+            <if test="query.factoryPaymentStatus != null and query.factoryPaymentStatus != ''">
+                AND factory_payment_status = #{query.factoryPaymentStatus}
+            </if>
+        </where>
+        ORDER BY STR_TO_DATE(detail_date, '%Y/%m/%d') DESC, id DESC
+    </select>
+</mapper> 
